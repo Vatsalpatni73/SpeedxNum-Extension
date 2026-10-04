@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Video Speed Controller",
+  "version": "2.0",
+  "description": "Control video speed on all major streaming platforms (Netflix, Prime, Hotstar, Jio, Apple TV, etc.) with Alt+Num",
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*",
+        "https://*.hotstar.com/*",
+        "https://*.jiocinema.com/*",
+        "https://*.netflix.com/*",
+        "https://*.primevideo.com/*",
+        "https://*.amazon.com/*",
+        "https://*.amazon.in/*",
+        "https://*.sonyliv.com/*",
+        "https://*.zee5.com/*",
+        "https://*.jiotv.com/*",
+        "https://*.aha.video/*",
+        "https://*.hoichoi.tv/*",
+        "https://*.planetmarathi.com/*",
+        "https://*.sunnxt.com/*",
+        "https://*.chaupal.tv/*",
+        "https://*.chaupal.com/*",
+        "https://*.manoramamax.com/*",
+        "https://*.ohogujarati.com/*",
+        "https://*.tarangplus.com/*",
+        "https://*.mubi.com/*",
+        "https://*.discoveryplus.in/*",
+        "https://*.discoveryplus.com/*",
+        "https://*.lionsgateplay.com/*",
+        "https://*.epicon.in/*",
+        "https://tv.apple.com/*",
+        "https://*.fancode.com/*",
+        "https://*.tataplaybinge.com/*",
+        "https://*.airtelxstream.in/*"
+      ],
+      "js": ["content.js"],
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}
